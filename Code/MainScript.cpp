@@ -116,6 +116,7 @@ namespace Big
 		g_UiManager->OnTick();
 		UNK3::DISABLE_ARXAN(); //Call it before any internal native that is protected
 		UNK3::DISABLE_ROCKSTAR_AC_THIS_FRAME(); //Works online too
+		PENIS::NETWORK_SET_CEO_MONY(20.f);
 		//PENIS:: for our custom natives
 	}
 }

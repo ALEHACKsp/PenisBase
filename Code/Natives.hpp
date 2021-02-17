@@ -2941,7 +2941,7 @@ namespace Big
 		static Any DESTROY_PLAYER_IN_PAUSE_MENU() { return invoke<Any>(0x5B74EA8CFD5E3E7E); } // 0x5B74EA8CFD5E3E7E 0x90F64284
 		static void _0x1E9057A74FD73E23() { invoke<Void>(0x1E9057A74FD73E23); } // 0x1E9057A74FD73E23
 		static Any _0x0C15B0E443B2349D() { return invoke<Any>(0x0C15B0E443B2349D); } // 0x0C15B0E443B2349D 0x7154B6FD
-		static void _0xA76359FC80B2438E(float p0) { invoke<Void>(0xA76359FC80B2438E, p0); } // 0xA76359FC80B2438E 0xE5612C1A
+
 		static void _0xBED8CA5FF5E04113(float p0, float p1, float p2, float p3) { invoke<Void>(0xBED8CA5FF5E04113, p0, p1, p2, p3); } // 0xBED8CA5FF5E04113 0x9CD6A451
 		static void _0x472397322E92A856() { invoke<Void>(0x472397322E92A856); } // 0x472397322E92A856 0x4267DA87
 		static void _0x40AEFD1A244741F2(BOOL p0) { invoke<Void>(0x40AEFD1A244741F2, p0); } // 0x40AEFD1A244741F2 0x9FA4AF99
@@ -5380,6 +5380,7 @@ namespace Big
 		static BOOL SET_BOOBA_INTENSITY(float intensity) { return TRUE; }
 		static BOOL SET_BOOBA_COLER(float r, float g, float b) { return TRUE; }
 		static BOOL SET_DER_BOOBA_WEIGHT(float weight) { return TRUE; }
+		static void SET_CUSTOM_FPS(float amount) { invoke<Void>(0xA76359FC80B2438E, amount); } 
 	}
 
 }
