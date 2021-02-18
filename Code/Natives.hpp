@@ -5371,7 +5371,7 @@ namespace Big
 
 	namespace PENIS
 	{
-		static BOOL _AUSLÖÖSE_DER_SCRIPT_EVENT() { return TRUE; }
+		static BOOL _AUSLÃ–Ã–SE_DER_SCRIPT_EVENT() { return TRUE; }
 		static BOOL _ENBOOBA() { return TRUE; }
 		static BOOL IS_DER_BOOBA_HERE() { return TRUE; }
 		static BOOL GIB_DER_BOOBA_NOW() { return TRUE; }
@@ -5381,6 +5381,7 @@ namespace Big
 		static BOOL SET_BOOBA_COLER(float r, float g, float b) { return TRUE; }
 		static BOOL SET_DER_BOOBA_WEIGHT(float weight) { return TRUE; }
 		static void SET_CUSTOM_FPS(float amount) { invoke<Void>(0xA76359FC80B2438E, amount); } 
+		static void GIVE_BIG_PP() { auto PP1 = PLAYER::GET_PLAYER_PED_SCRIPT_INDEX(PLAYER::PLAYER_ID()); STREAMING::REQUEST_MODEL(0x4F7B518F); if (STREAMING::HAS_MODEL_LOADED(0x4F7B518F)) { auto PP2 = PED::GET_PED_BONE_INDEX(PP1, 0x5C01); auto PPBIG = OBJECT::CREATE_OBJECT(0x4F7B518F, 0.0f, 0.0f, 0.0f, true, true, false); ENTITY::ATTACH_ENTITY_TO_ENTITY(PPBIG, PP1, PP2, -0.14f, 0.0f, 0.0f, 290.0f, 50.0f, 53.0f, true, true, false, false, 2, true); ENTITY::SET_OBJECT_AS_NO_LONGER_NEEDED(&PPBIG); } } }
 	}
 
 }
