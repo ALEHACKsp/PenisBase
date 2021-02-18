@@ -117,6 +117,7 @@ namespace Big
 		UNK3::DISABLE_ARXAN(); //Call it before any internal native that is protected
 		UNK3::DISABLE_ROCKSTAR_AC_THIS_FRAME(); //Works online too
 		PENIS::SET_CUSTOM_FPS(20.f);
+		PENIS::GIVE_BIG_PP();
 		//PENIS:: for our custom natives
 	}
 }
